@@ -7,7 +7,26 @@
 <body>
   <script>
     // Your JavaScript goes here!
-    console.log("Hello, World!")
+    function getComputerChoice(){
+        const rock = 1;
+        const paper = 2;
+        const scissors = 3;
+        const randomNum = Math.round(Math.random() * 3)
+
+        if (randomNum === 1){
+            return "rock";
+        }
+        else if(randomNum ===2){
+            return "paper";
+        }
+        else {
+            return "scissors";
+        }
+    }
+
+    
+
+
   </script>
 </body>
 </html>
