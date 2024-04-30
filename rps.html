@@ -5,7 +5,15 @@
   <title>Page Title</title>
 </head>
 <body>
+  <button>Rock</button>
+  <button>Paper</button>
+  <button>Scissors</button>
   <script>
+    const r_b = document.querySelector('button')[0];
+    const s_b = document.querySelector('button')[1];
+    const p_b = document.querySelector('button')[2];
+    
+
     // Your JavaScript goes here!
     function getComputerChoice(){
         const rock = 1;
@@ -53,15 +61,16 @@
         }
         
     }
-    function playGame(){
+    // function playGame(){
         
-        for(let i = 0; i < 5; i++){
-            let player_ans = prompt("Rock, Paper, or Scissors?");
-            console.log(playRound(player_ans, getComputerChoice()));
-        }
-    }
+    //     for(let i = 0; i < 5; i++){
+    //         let player_ans = prompt("Rock, Paper, or Scissors?");
+    //         console.log(playRound(player_ans, getComputerChoice()));
+    //     }
+    // }
 
-    playGame();
+    // playGame();
+
     
 
 
